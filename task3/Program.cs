@@ -4,7 +4,11 @@ class Answer {
     static void CheckIfEven(int number)
     {
       // Введите свое решение ниже
-
+        if (number % 2 == 0) {
+            Console.WriteLine($"Число `{number}` чётное");
+        } else {
+            Console.WriteLine($"Число `{number}` нечётное");
+        }
 
     }
   
@@ -17,7 +21,7 @@ class Answer {
             number = int.Parse(args[0]);
         } else {
            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            number = 6;
+            number = 5;
         }
 
         // Не удаляйте строки ниже
