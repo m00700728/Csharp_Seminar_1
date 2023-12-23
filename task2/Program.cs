@@ -5,8 +5,16 @@ public class Answer {
   static int FindMax(int a, int b, int c)
     {
       // Введите свое решение ниже
-
-
+        int max;
+        if (a > b) {
+            max = a;
+        } else {
+            max = b;
+        }
+        if (max < c) {
+            max = c;
+        } 
+        return max;
 
     }
 
@@ -20,7 +28,7 @@ public class Answer {
            c = int.Parse(args[2]);
         } else {
            // Здесь вы можете поменять значения для отправки кода на Выполнение
-           a = 5;
+           a = 8;
            b = 6;
            c = 7;
         }
