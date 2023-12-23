@@ -4,7 +4,11 @@ public class Answer {
     static void PrintEvenNumbers(int number)
     {
       // Введите свое решение ниже
-
+        for (int i = 1; i <= number; i++) {
+            if (i % 2 == 0) {
+                Console.Write($"{i}	");
+            }
+        }
 
     }
 
@@ -17,7 +21,7 @@ public class Answer {
             number = int.Parse(args[0]);
         } else {
            // Здесь вы можете поменять значения для отправки кода на Выполнение
-            number = 6;
+            number = 7;
         }
 
         // Не удаляйте строки ниже
